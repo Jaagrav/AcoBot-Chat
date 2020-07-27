@@ -1,4 +1,4 @@
-let darkMode = true;
+let darkMode = false;
 document
   .querySelector(".theme-mode-btn")
   .addEventListener("click", function () {
