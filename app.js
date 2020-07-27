@@ -18,6 +18,7 @@ window.addEventListener("resize", function () {
 document.querySelector(".footer img").addEventListener("click", makeRequest);
 function makeRequest() {
   var x = document.querySelector(".footer input").value;
+  document.querySelector(".footer input").focus();
   document.querySelector(".footer input").value = "";
   if (x.trim() != "") {
     document.querySelector(".chat-body").innerHTML +=
