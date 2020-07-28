@@ -5,10 +5,12 @@ document
     if (!darkMode) {
       document.documentElement.style.setProperty("--text-bg", "#1d1d1d");
       document.documentElement.style.setProperty("--bg-color", "#131313");
+      document.getElementsByTagName("META")[0].content = "#131313";
       darkMode = true;
     } else {
       document.documentElement.style.setProperty("--text-bg", "#ebebeb");
       document.documentElement.style.setProperty("--bg-color", "#ffffff");
+      document.getElementsByTagName("META")[0].content = "#ffffff";
       darkMode = false;
     }
   });
